@@ -516,7 +516,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ===== TILT EFFECT ON CARDS (DESKTOP ONLY) =====
-  if (window.innerWidth > 768) {
+  const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+  if (!isTouchDevice && window.innerWidth > 768) {
     const tiltCards = document.querySelectorAll('.service-card, .program-card');
     tiltCards.forEach(card => {
       card.addEventListener('mousemove', (e) => {
@@ -536,4 +537,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ===== MOBILE: REDUCE PARTICLES FOR PERFORMANCE =====
+  if (isTouchDevice && particlesContainer) {
+    const particles = particlesContainer.querySelectorAll('.particle');
+    particles.forEach((p, i) => {
+      if (i > 12) p.remove(); // Keep only 12 particles on mobile
+    });
+  }
+
+  // ===== MOBILE: PREVENT iOS ZOOM ON INPUT FOCUS =====
+  if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+    const inputs = document.querySelectorAll('input, select, textarea');
+    inputs.forEach(input => {
+      input.addEventListener('focus', () => {
+        document.querySelector('meta[name="viewport"]')
+          .setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1');
+      });
+      input.addEventListener('blur', () => {
+        document.querySelector('meta[name="viewport"]')
+          .setAttribute('content', 'width=device-width, initial-scale=1');
+      });
+    });
+  }
+
 });
+
