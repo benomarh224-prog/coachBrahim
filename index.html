@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elite Fitness Coaching — Transform your body and mind with professional personal training, online coaching, and custom nutrition plans. Start your journey today.">
+  <meta name="keywords" content="fitness coach, personal trainer, online coaching, nutrition plans, workout programs, body transformation">
+  <meta name="author" content="Coach Elite">
+  <title>ELITE FIT — Professional Fitness Coaching</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-text">ELITE FIT</div>
+      <div class="loader-bar">
+        <div class="loader-bar-inner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">ELITE<span>FIT</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#programs">Programs</a>
+        <a href="#transformations">Results</a>
+        <a href="#bmi">BMI</a>
+        <a href="#blog">Blog</a>
+        <a href="#booking" class="nav-cta">Book Now</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="hero-coach.png" alt="Professional fitness coach in gym">
+    </div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Now Accepting New Clients
+        </div>
+        <h1 class="hero-title">
+          <span class="line">Build Your</span>
+          <span class="line"><span class="highlight">Strongest</span> Body</span>
+          <span class="line outline-text">& Mind</span>
+        </h1>
+        <p class="hero-description">
+          Transform your physique with science-backed training, personalized nutrition, and unwavering accountability. Your elite transformation starts here.
+        </p>
+        <div class="hero-buttons">
+          <a href="#booking" class="btn btn-primary">
+            <i class="fas fa-bolt"></i> Start Your Journey
+          </a>
+          <a href="#programs" class="btn btn-outline">
+            <i class="fas fa-play"></i> View Programs
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="500">0</div>
+            <div class="hero-stat-label">Clients Transformed</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="12">0</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" data-count="98">0</div>
+            <div class="hero-stat-label">% Success Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=700&fit=crop" alt="Coach portrait">
+          </div>
+          <div class="about-experience-badge">
+            <div class="number">12+</div>
+            <div class="label">Years Exp.</div>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <span class="section-subtitle">About Me</span>
+          <h2 class="section-title">More Than Just<br><span class="highlight">A Coach</span></h2>
+          <p class="about-text">
+            I'm a certified personal trainer and sports nutrition specialist with over 12 years of experience helping people transform their bodies, minds, and lifestyles. My approach combines evidence-based training methodologies with personalized nutrition strategies that deliver real, sustainable results.
+          </p>
+          <p class="about-text">
+            Having competed in bodybuilding and trained athletes across multiple disciplines, I bring a wealth of knowledge and passion to every coaching session. Your goals become my mission.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-award"></i></div>
+              <span>NASM Certified</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-utensils"></i></div>
+              <span>Nutrition Specialist</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-trophy"></i></div>
+              <span>Competition Coach</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fas fa-heartbeat"></i></div>
+              <span>Functional Training</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">
+            <i class="fas fa-envelope"></i> Get In Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">What I Offer</span>
+        <h2 class="section-title">Premium <span class="highlight">Services</span></h2>
+        <p class="section-desc">Comprehensive coaching solutions designed to help you reach your peak performance and aesthetic goals.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🏋️</div>
+          <h3>Personal Training</h3>
+          <p>One-on-one sessions tailored to your unique goals, fitness level, and schedule. Get hands-on coaching with real-time form corrections.</p>
+          <ul class="service-features">
+            <li>Custom workout programming</li>
+            <li>Form & technique coaching</li>
+            <li>Progressive overload tracking</li>
+            <li>In-gym or at-home sessions</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">💻</div>
+          <h3>Online Coaching</h3>
+          <p>Train anywhere in the world with my comprehensive remote coaching program. Full support through our dedicated training app.</p>
+          <ul class="service-features">
+            <li>Video exercise demonstrations</li>
+            <li>Weekly check-ins & adjustments</li>
+            <li>24/7 messaging support</li>
+            <li>App-based workout tracking</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🥗</div>
+          <h3>Nutrition Plans</h3>
+          <p>Science-backed nutrition protocols designed around your lifestyle, preferences, and metabolic needs for sustainable results.</p>
+          <ul class="service-features">
+            <li>Personalized macro calculations</li>
+            <li>Flexible meal planning</li>
+            <li>Supplement guidance</li>
+            <li>Monthly plan adjustments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS SECTION ===== -->
+  <section class="programs" id="programs">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Training Programs</span>
+        <h2 class="section-title">Choose Your <span class="highlight">Path</span></h2>
+        <p class="section-desc">Structured programs for every experience level, from complete beginners to seasoned athletes.</p>
+      </div>
+      <div class="programs-grid">
+        <!-- Beginner -->
+        <div class="program-card reveal">
+          <div class="program-image">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=300&fit=crop" alt="Beginner program">
+          </div>
+          <div class="program-content">
+            <span class="program-level"><i class="fas fa-signal"></i> Beginner</span>
+            <h3>Foundation Builder</h3>
+            <p>Build your base with proper movement patterns, develop strength foundations, and establish consistent training habits.</p>
+            <div class="program-meta">
+              <div class="program-meta-item">
+                <div class="value">8</div>
+                <div class="label">Weeks</div>
+              </div>
+              <div class="program-meta-item">
+                <div class="value">3-4</div>
+                <div class="label">Days/Week</div>
+              </div>
+              <div class="program-meta-item">
+                <div class="value">45</div>
+                <div class="label">Min/Session</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Intermediate -->
+        <div class="program-card featured reveal">
+          <div class="program-badge">Most Popular</div>
+          <div class="program-image">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&h=300&fit=crop" alt="Intermediate program">
+          </div>
+          <div class="program-content">
+            <span class="program-level"><i class="fas fa-signal"></i> Intermediate</span>
+            <h3>Muscle Architect</h3>
+            <p>Progressive hypertrophy training with periodized programming to maximize muscle growth, strength, and body composition.</p>
+            <div class="program-meta">
+              <div class="program-meta-item">
+                <div class="value">12</div>
+                <div class="label">Weeks</div>
+              </div>
+              <div class="program-meta-item">
+                <div class="value">4-5</div>
+                <div class="label">Days/Week</div>
+              </div>
+              <div class="program-meta-item">
+                <div class="value">60</div>
+                <div class="label">Min/Session</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Advanced -->
+        <div class="program-card reveal">
+          <div class="program-image">
+            <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=500&h=300&fit=crop" alt="Advanced program">
+          </div>
+          <div class="program-content">
+            <span class="program-level"><i class="fas fa-signal"></i> Advanced</span>
+            <h3>Elite Performance</h3>
+            <p>High-intensity advanced programming with undulating periodization for experienced lifters seeking peak performance.</p>
+            <div class="program-meta">
+              <div class="program-meta-item">
+                <div class="value">16</div>
+                <div class="label">Weeks</div>
+              </div>
+              <div class="program-meta-item">
+                <div class="value">5-6</div>
+                <div class="label">Days/Week</div>
+              </div>
+              <div class="program-meta-item">
+                <div class="value">75</div>
+                <div class="label">Min/Session</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRANSFORMATIONS & TESTIMONIALS ===== -->
+  <section class="transformations" id="transformations">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Real Results</span>
+        <h2 class="section-title">Client <span class="highlight">Transformations</span></h2>
+        <p class="section-desc">Real people, real results. See what dedication and expert coaching can achieve.</p>
+      </div>
+
+      <div class="transform-grid">
+        <div class="transform-card reveal">
+          <div class="transform-images">
+            <div class="before">
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=300&h=350&fit=crop" alt="Before transformation">
+              <span class="label">Before</span>
+            </div>
+            <div class="after">
+              <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=300&h=350&fit=crop" alt="After transformation">
+              <span class="label">After</span>
+            </div>
+            <div class="transform-divider">→</div>
+          </div>
+          <div class="transform-info">
+            <h4>Ahmed K. — 16 Week Transformation</h4>
+            <p>"I never thought I could look and feel this good. The program changed my entire lifestyle."</p>
+            <div class="transform-stats">
+              <div class="transform-stat">
+                <div class="val">-18kg</div>
+                <div class="lbl">Weight Lost</div>
+              </div>
+              <div class="transform-stat">
+                <div class="val">-12%</div>
+                <div class="lbl">Body Fat</div>
+              </div>
+              <div class="transform-stat">
+                <div class="val">+8kg</div>
+                <div class="lbl">Muscle Gain</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="transform-card reveal">
+          <div class="transform-images">
+            <div class="before">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=350&fit=crop" alt="Before transformation">
+              <span class="label">Before</span>
+            </div>
+            <div class="after">
+              <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?w=300&h=350&fit=crop" alt="After transformation">
+              <span class="label">After</span>
+            </div>
+            <div class="transform-divider">→</div>
+          </div>
+          <div class="transform-info">
+            <h4>Sarah M. — 12 Week Transformation</h4>
+            <p>"The online coaching program fit perfectly into my busy schedule. Incredible support!"</p>
+            <div class="transform-stats">
+              <div class="transform-stat">
+                <div class="val">-14kg</div>
+                <div class="lbl">Weight Lost</div>
+              </div>
+              <div class="transform-stat">
+                <div class="val">-10%</div>
+                <div class="lbl">Body Fat</div>
+              </div>
+              <div class="transform-stat">
+                <div class="val">+5kg</div>
+                <div class="lbl">Muscle Gain</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials Slider -->
+      <div class="testimonials-slider reveal">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="testimonial-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Client">
+              </div>
+              <div class="testimonial-content">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Working with Coach Elite was the best investment I ever made in myself. The attention to detail in programming and nutrition was unmatched. I went from never stepping foot in a gym to competing in my first physique competition."</p>
+                <div class="testimonial-author">Michael R.</div>
+                <div class="testimonial-role">Business Executive • 6 Month Journey</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="testimonial-avatar">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Client">
+              </div>
+              <div class="testimonial-content">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"The online coaching program is phenomenal. I travel constantly for work and Coach Elite designed a program that works anywhere — hotel gyms, home workouts, you name it. Down 20kg and feeling incredible."</p>
+                <div class="testimonial-author">Lina A.</div>
+                <div class="testimonial-role">Marketing Director • 4 Month Journey</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="testimonial-avatar">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" alt="Client">
+              </div>
+              <div class="testimonial-content">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"As a former athlete who let himself go, I needed expert guidance to get back on track. The personalized programming and weekly accountability calls made all the difference. Back to peak performance at 40!"</p>
+                <div class="testimonial-author">James T.</div>
+                <div class="testimonial-role">Former Athlete • 8 Month Journey</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-nav">
+          <button id="prevTestimonial" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+          <button id="nextTestimonial" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BMI CALCULATOR ===== -->
+  <section class="bmi" id="bmi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Health Check</span>
+        <h2 class="section-title">BMI <span class="highlight">Calculator</span></h2>
+        <p class="section-desc">Get a quick snapshot of where you stand. This is just the beginning — let's build your plan.</p>
+      </div>
+      <div class="bmi-wrapper reveal">
+        <div class="bmi-info">
+          <h3>Know Your <span class="highlight">Numbers</span></h3>
+          <p>Body Mass Index (BMI) is a useful starting point to understand your body composition. Calculate yours and let's discuss your personalized roadmap.</p>
+          <div class="bmi-categories">
+            <div class="bmi-category">
+              <span><i class="fas fa-circle" style="color:#3b82f6;font-size:0.5rem;margin-right:8px"></i>Underweight</span>
+              <span class="range">&lt; 18.5</span>
+            </div>
+            <div class="bmi-category">
+              <span><i class="fas fa-circle" style="color:#39FF14;font-size:0.5rem;margin-right:8px"></i>Normal</span>
+              <span class="range">18.5 – 24.9</span>
+            </div>
+            <div class="bmi-category">
+              <span><i class="fas fa-circle" style="color:#f59e0b;font-size:0.5rem;margin-right:8px"></i>Overweight</span>
+              <span class="range">25 – 29.9</span>
+            </div>
+            <div class="bmi-category">
+              <span><i class="fas fa-circle" style="color:#ef4444;font-size:0.5rem;margin-right:8px"></i>Obese</span>
+              <span class="range">≥ 30</span>
+            </div>
+          </div>
+        </div>
+        <form class="bmi-form" id="bmiForm">
+          <div class="form-group">
+            <label for="bmiGender">Gender</label>
+            <select id="bmiGender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bmiAge">Age</label>
+              <input type="number" id="bmiAge" placeholder="e.g. 28" min="10" max="100" required>
+            </div>
+            <div class="form-group">
+              <label for="bmiHeight">Height (cm)</label>
+              <input type="number" id="bmiHeight" placeholder="e.g. 175" min="100" max="250" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bmiWeight">Weight (kg)</label>
+            <input type="number" id="bmiWeight" placeholder="e.g. 80" min="30" max="300" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+            <i class="fas fa-calculator"></i> Calculate BMI
+          </button>
+          <div class="bmi-result" id="bmiResult">
+            <div class="bmi-value" id="bmiValue">0</div>
+            <div class="bmi-label">Your BMI</div>
+            <div class="bmi-status" id="bmiStatus"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG SECTION ===== -->
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Fitness Tips</span>
+        <h2 class="section-title">Latest From The <span class="highlight">Blog</span></h2>
+        <p class="section-desc">Expert insights, training tips, and nutrition advice to fuel your journey.</p>
+      </div>
+      <div class="blog-grid" id="blogGrid">
+        <!-- Blog cards are populated via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING SECTION ===== -->
+  <section class="booking" id="booking">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Get Started</span>
+        <h2 class="section-title">Book Your <span class="highlight">Session</span></h2>
+        <p class="section-desc">Ready to start your transformation? Book a free consultation and let's design your roadmap to success.</p>
+      </div>
+      <div class="booking-wrapper reveal">
+        <div class="booking-info">
+          <h3>Why <span class="highlight">Train</span> With Me?</h3>
+          <p>Every journey starts with a single step. Book your free consultation and let's create a plan tailored specifically to your goals.</p>
+          <div class="booking-benefits">
+            <div class="booking-benefit">
+              <div class="booking-benefit-icon">🎯</div>
+              <span>Free initial consultation & assessment</span>
+            </div>
+            <div class="booking-benefit">
+              <div class="booking-benefit-icon">📋</div>
+              <span>Customized training & nutrition plan</span>
+            </div>
+            <div class="booking-benefit">
+              <div class="booking-benefit-icon">📱</div>
+              <span>24/7 support via WhatsApp</span>
+            </div>
+            <div class="booking-benefit">
+              <div class="booking-benefit-icon">📊</div>
+              <span>Weekly progress tracking & adjustments</span>
+            </div>
+            <div class="booking-benefit">
+              <div class="booking-benefit-icon">💪</div>
+              <span>100% money-back guarantee</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form class="booking-form" id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookName">Full Name</label>
+                <input type="text" id="bookName" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="bookEmail">Email</label>
+                <input type="email" id="bookEmail" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookPhone">Phone</label>
+                <input type="tel" id="bookPhone" placeholder="+1 (555) 000-0000">
+              </div>
+              <div class="form-group">
+                <label for="bookService">Service</label>
+                <select id="bookService">
+                  <option value="">Select a service</option>
+                  <option value="personal">Personal Training</option>
+                  <option value="online">Online Coaching</option>
+                  <option value="nutrition">Nutrition Plan</option>
+                  <option value="combo">Full Package</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookDate">Preferred Date</label>
+                <input type="date" id="bookDate" required>
+              </div>
+              <div class="form-group">
+                <label for="bookTime">Preferred Time</label>
+                <select id="bookTime">
+                  <option value="">Select time</option>
+                  <option value="morning">Morning (6AM - 10AM)</option>
+                  <option value="midday">Midday (10AM - 2PM)</option>
+                  <option value="afternoon">Afternoon (2PM - 6PM)</option>
+                  <option value="evening">Evening (6PM - 9PM)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="bookGoals">Your Goals</label>
+              <textarea id="bookGoals" placeholder="Tell me about your fitness goals, current experience, and any health considerations..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <i class="fas fa-calendar-check"></i> Book Free Consultation
+            </button>
+          </form>
+          <div class="booking-success" id="bookingSuccess">
+            <div class="icon">✅</div>
+            <h4>Booking Confirmed!</h4>
+            <p>Thank you! I'll reach out within 24 hours to confirm your session. Let's get started on your transformation!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+        <p class="section-desc">Have questions? Reach out through any channel — I'm here to help you start your journey.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Downtown Fitness Hub<br>123 Iron Street, Suite 500</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>coach@elitefit.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon - Sat: 6:00 AM - 9:00 PM</p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/15551234567" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp" style="font-size:1.3rem"></i> Chat on WhatsApp
+          </a>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form reveal-right">
+          <h3>Send A <span class="highlight">Message</span></h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" placeholder="What's this about?">
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" placeholder="Tell me how I can help you..." rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">ELITE<span>FIT</span></a>
+          <p>Transforming lives through science-backed training and personalized nutrition. Your elite coach for lasting results.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#transformations">Results</a></li>
+            <li><a href="#booking">Book Session</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#programs">Foundation Builder</a></li>
+            <li><a href="#programs">Muscle Architect</a></li>
+            <li><a href="#programs">Elite Performance</a></li>
+            <li><a href="#bmi">BMI Calculator</a></li>
+            <li><a href="#blog">Fitness Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:coach@elitefit.com">coach@elitefit.com</a></li>
+            <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+            <li><a href="#contact">123 Iron Street</a></li>
+            <li><a href="https://wa.me/15551234567" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 ELITE FIT. All rights reserved.</span>
+        <span>Designed with 💚 for peak performance</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Blog Modal -->
+  <div class="blog-modal" id="blogModal">
+    <div class="blog-modal-overlay" id="blogModalOverlay"></div>
+    <div class="blog-modal-content" id="blogModalContent">
+      <button class="blog-modal-close" id="blogModalClose"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+
+  <script src="javaScript.js"></script>
+</body>
+</html>
